@@ -1,0 +1,41 @@
+Public Class Form1
+    Dim panjang As Integer
+    Dim lebar As Integer
+    Dim luas As Integer
+    Dim keliling As Integer
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        panjang = Val(txtpanjang.Text)
+        lebar = Val(txtlebar.Text)
+        keliling = Val(txtkeliling.Text)
+        luas = Val(txtluas.Text)
+
+        'rumus menghitung luas persegi panjang
+        ' panjang * lebar
+
+        luas = panjang * lebar
+        txtluas.Text = luas
+
+        'rumus menghitung keliling persegi panjang
+        '2 * (p+l)
+        keliling = 2 * (panjang + lebar)
+        txtkeliling.Text = keliling
+
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        End
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        txtkeliling.Clear()
+        txtlebar.Clear()
+        txtluas.Clear()
+        txtpanjang.Clear()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+End Class
